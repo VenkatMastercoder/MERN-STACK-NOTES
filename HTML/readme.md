@@ -118,8 +118,19 @@ The HTML
 # 1. **Image Element**
 The `<img>` tag in HTML is used to embed images on a webpage
 
+**This is for Signal Image **
+
 ```html
 <img src="IMAGE_URL" alt=""/>
+```
+**This is for Multiple Images **
+
+```
+<picture>
+  <source srcset="large.jpg" media="(min-width: 800px)">
+  <source srcset="medium.jpg" media="(min-width: 600px)">
+  <img src="small.jpg" alt="Responsive Image">
+</picture>
 ```
 It is a self-closing tag is know as **VOID **Elements.
 
@@ -130,9 +141,16 @@ The `alt` attribute provides alternative text for accessibility and is displayed
 # 2. Audio** Element**
 The `<audio>` tag in HTML is used to embed audio content on a webpage
 
+**This is for Signal Video **
+
+```
+<audio src="example.mp3" type="audio/mp3" controls></audio>
+```
+#### This is For Multiple Audio 
 ```html
 <!-- The audio tag with the src attribute pointing to the audio file -->
 <audio controls>
+  <source src="example.mp3" type="audio/mp3">
   <source src="example.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
@@ -146,6 +164,12 @@ The `controls` attribute adds playback controls to the audio player.
 # 3. Video** Element**
 The `<video>` tag in HTML is used to embed video content on a webpage
 
+**This is for Signal Video **
+
+```
+<video src="example.mp3" type="audio/mp3" controls></video>
+```
+#### This is For Multiple Video
 ```
 <!-- The video tag with the src attribute pointing to the video file -->
 <video width="640" height="360" controls>
